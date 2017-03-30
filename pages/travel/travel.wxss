@@ -1,0 +1,120 @@
+/*pages/travel/travel.wxss*/
+.container{
+    width:100%
+}
+.container .banner{
+    width:100%;
+    height:400rpx
+}
+.container .banner .bannerSwiper{
+    width:100%;
+    height:100%
+}
+
+/*热门*/
+.container .hot{
+    margin-top:20rpx;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    
+   
+}
+.hot image{width: 100%;height: 100%}
+.headLineSwiper{
+  width: 70%;
+  height: 100%;
+  line-height: 100rpx;
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hoticon{
+    width:20%;
+    height: 100%;
+}
+.hotimg{
+    width: 100%;
+    height: 100%
+}
+
+/*四季*/
+.container .season{
+    width: 100%;
+    height: 100%;
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-around
+}
+.inner{
+    width: 49%;
+    height: 250rpx;
+    position: relative;
+}
+.inner text{
+    font-family: initial;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top:10%;
+    left:5%;
+    text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+    filter: Glow(color=#000, strength=1);
+}
+.spring{
+    background-image: url(http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/spring/spring.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.summer{
+    background-image: url(http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/summer/summer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.autumn{
+    background-image: url(http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/autumn/autumn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.winner{
+    background-image: url(http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/winter/winter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

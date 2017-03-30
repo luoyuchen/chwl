@@ -1,0 +1,44 @@
+<view class="container">
+    <!--轮播图-->
+    <view class="banner">
+        <swiper class="bannerSwiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}">
+          <block wx:for="{{banners}}" wx:for-item="banner" >
+              <swiper-item>
+                <image src="{{banner}}" style="width:100%;margin:0 auto;"></image>
+              </swiper-item>
+          </block>
+        </swiper>
+    </view>
+    <!--热门预留-->
+    <view class="hot">
+        <view class="hoticon">
+            <image src="{{hoticon}}" style="width:100%;height:100%"></image>
+        </view>
+        
+        <swiper class="headLineSwiper" vertical="{{vertical}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <swiper-item wx:for="{{headLineList}}" wx:for-item="hot" class="hotimg" bindtap="jumpHeadLineList">
+        
+        <image src="{{hot}}" style=""></image>
+          
+        
+      </swiper-item>
+    </swiper>
+    </view>
+    <!--四季-->
+    <view class="season">
+        <view class="inner spring" bindtap="openSpring">
+            <text>春</text>
+        </view>
+        <view class="inner summer" bindtap="openSummer">
+            <text>夏</text>
+        </view>
+    </view>
+    <view class="season">
+        <view class="inner autumn" bindtap="openAutumn">
+            <text>秋</text>
+        </view>
+        <view class="inner winner" bindtap="openWinter">
+            <text>冬</text>
+        </view>
+    </view>
+</view>

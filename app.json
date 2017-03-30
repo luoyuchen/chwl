@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/travel/travel",
+    "pages/strategy/strategy",
+    "pages/more/more",
+    "pages/logs/logs",
+    "pages/tool/tool",
+    "pages/season/spring/post",
+    "pages/season/spring/post-detail/post-detail",
+    "pages/season/summer/post",
+    "pages/season/summer/post-detail/post-detail",
+    "pages/season/autumn/post",
+    "pages/season/autumn/post-detail/post-detail",
+    "pages/season/winter/post",
+    "pages/season/winter/post-detail/post-detail"
+   
+    
+  ],
+  "tabBar": {
+    "backgroundColor":"#fff",
+    "color":"#8b8a92",
+    "selectedColor": "#f18118",
+    "borderStyle": "#c2c2c2",
+    "list": [{
+      "pagePath": "pages/travel/travel",
+      "text": "攻略",
+      "iconPath": "images/icon/traveled.png",
+      "selectedIconPath": "images/icon/travel.png"
+    },
+      {
+      "pagePath": "pages/tool/tool",
+      "text": "助手",
+      "iconPath": "images/icon/helperd.png",
+      "selectedIconPath": "images/icon/helper.png"
+    },
+    {
+      "pagePath": "pages/strategy/strategy",
+      "text": "工具",
+      "iconPath": "images/icon/mored.png",
+      "selectedIconPath": "images/icon/more.png"
+    }
+    ]
+  }
+}

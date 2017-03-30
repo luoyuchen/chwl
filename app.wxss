@@ -1,0 +1,9 @@
+/**app.wxss**/
+page{
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 10pt;
+  line-height: 150%;
+  color: #666;
+  height: 100%;
+}
+
