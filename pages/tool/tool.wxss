@@ -103,6 +103,6 @@ view{
 }
 #submitBtn{
     position:fixed;
-    bottom:10px;
+    bottom:1px;
     right:10px;
 }

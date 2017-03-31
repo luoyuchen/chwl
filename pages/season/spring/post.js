@@ -18,5 +18,13 @@ Page({
     wx.navigateTo({
       url: 'post-detail/post-detail?id='+postId
     })
-  }
+  },
+  
+  onShareAppMessage: function() {
+        return {
+            title: '【吃喝玩乐大搜索】',
+            desc: '北京春季赏花攻略',
+            path: 'pages/season/spring/post'
+        }
+    }
 })

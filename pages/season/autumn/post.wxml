@@ -1,7 +1,7 @@
 <import src="post-item/post-item-template.wxml" />
 <view>
   
-  <image src="/images/spring.jpg" style="width:100%"></image>
+  <image src="http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/autumn/autumn.jpg" style="width:100%"></image>
   <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx">
 
     <!--把内容放在对象里面，组成数组，对内容进行数据绑定，再搭配for循环-->
