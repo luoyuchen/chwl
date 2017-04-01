@@ -147,8 +147,8 @@ Page({
 
     onShareAppMessage: function() {
         return {
-            title: '【吃喝玩乐大搜索】',
-            desc: '不懂？就问智能助手吧',
+            title: '【不懂？就问智能助手吧】',
+            desc: '',
             path: 'pages/tool/tool'
         }
     }

@@ -20,8 +20,8 @@ Page({
   },
   onShareAppMessage: function() {
         return {
-            title: '【吃喝玩乐攻略百科】',
-            desc: '北京夏季游攻略',
+            title: '【北京夏季游攻略】',
+            desc: '',
             path: 'pages/season/summer/post'
         }
     }
