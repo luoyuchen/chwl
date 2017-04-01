@@ -22,7 +22,7 @@ Page({
   
   onShareAppMessage: function() {
         return {
-            title: '【吃喝玩乐大搜索】',
+            title: '【吃喝玩乐攻略百科】',
             desc: '北京春季赏花攻略',
             path: 'pages/season/spring/post'
         }

@@ -1,15 +1,16 @@
 var app = getApp();
 Page({
   data:{
-    banners:['http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/spring/spring.jpg','http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/summer/summer.jpg','http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/autumn/autumn.jpg','http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/winter/winter.jpg'],
+    banners:['http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/spring/xiangshan.jpg','http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/summer/shidu.jpg','http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/autumn/zhanggezhuang.jpg','http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/winter/badaling.jpg'],
     indicatorDots:false,
-    autoplay:true,
+    bannerautoplay:true,
     interval:5000,
     vertical: true,
     duration: 1000,
     circular: true,
     headLineList:['http://api.h6vr.com/cdn.h6vr.com/chwl/images/hot/taohuajie.jpg','http://api.h6vr.com/cdn.h6vr.com/chwl/images/hot/taohuajie.jpg','http://api.h6vr.com/cdn.h6vr.com/chwl/images/hot/taohuajie.jpg'],
-    hoticon:['http://api.h6vr.com/cdn.h6vr.com/chwl/images/hot/hot.png']
+    hoticon:['http://api.h6vr.com/cdn.h6vr.com/chwl/images/hot/hot.png'],
+    hotautoplay:false
   },
   onLoad:function(options){
     // 生命周期函数--监听页面加载
@@ -61,6 +62,13 @@ Page({
             }
         })
     },*/
+    jumpHeadLineList:function(){
+        wx.navigateTo(
+            {
+            url:'../hot/hot'
+        }
+        )
+    },
     openSpring:function(){
         wx.navigateTo({
             url:'../season/spring/post'

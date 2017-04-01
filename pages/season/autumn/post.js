@@ -17,5 +17,12 @@ Page({
     wx.navigateTo({
       url: 'post-detail/post-detail?id='+postId
     })
-  }
+  },
+  onShareAppMessage: function() {
+        return {
+            title: '【吃喝玩乐攻略百科】',
+            desc: '北京秋季旅游攻略',
+            path: 'pages/season/autumn/post'
+        }
+    }
 })

@@ -17,5 +17,12 @@ Page({
     wx.navigateTo({
       url: 'post-detail/post-detail?id='+postId
     })
-  }
+  },
+  onShareAppMessage: function() {
+        return {
+            title: '【吃喝玩乐攻略百科】',
+            desc: '北京冬季好去处',
+            path: 'pages/season/winter/post'
+        }
+    }
 })
