@@ -10,7 +10,7 @@ Page({
         })
         var postData = postsData.postList[postId];
         this.setData({
-            //狗日的更新把this.data的数据绑定方式变为只能this.setData来进行数据绑定
+            //this.setData来进行数据绑定
             postData: postData
 
         })
