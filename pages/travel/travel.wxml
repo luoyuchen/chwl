@@ -26,19 +26,19 @@
     </view>
     <!--四季-->
     <view class="season">
-        <view class="inner spring" bindtap="openSpring">
-            <text>春</text>
+        <view class="inner spring hover" bindtap="openSpring">
+            <text class="text">春</text>
         </view>
-        <view class="inner summer" bindtap="openSummer">
-            <text>夏</text>
+        <view class="inner summer hover" bindtap="openSummer">
+            <text class="text">夏</text>
         </view>
     </view>
     <view class="season">
         <view class="inner autumn" bindtap="openAutumn">
-            <text>秋</text>
+            <text class="text">秋</text>
         </view>
         <view class="inner winner" bindtap="openWinter">
-            <text>冬</text>
+            <text class="text">冬</text>
         </view>
     </view>
 </view>

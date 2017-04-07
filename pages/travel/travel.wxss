@@ -44,7 +44,7 @@
 .container .season{
     width: 100%;
     height: 100%;
-    margin-top: 20rpx;
+    margin-top: 15rpx;
     display: flex;
     justify-content: space-around
 }
@@ -54,17 +54,46 @@
     position: relative;
 }
 .inner text{
-    font-family: initial;
-    font-size: 25px;
+    font-family: Microsoft YaHei;
+    font-size: 30px;
     color: white;
     position: absolute;
-    top:10%;
-    left:5%;
-    text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+    width: 100%;
+    text-align: center;
+    line-height: 250rpx;
+    /*text-shadow:#eb4714 1px 0 0,#eb4714 0 1px 0,#eb4714 -1px 0 0,#eb4714 0 -1px 0;*/
     filter: Glow(color=#000, strength=1);
 }
+
+/*w文字伪类*/
+.text{
+  position: relative;
+  opacity: 0.9;
+  
+}
+.text:before{
+    content: "";
+    position: absolute;
+    top:10%;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background: #fff;
+    opacity: 0.6
+}
+.text:after{
+    content: "";
+    position: absolute;
+    
+    top:90%;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background: #fff;
+    opacity: 0.6
+}
 .spring{
-    background-image: url(http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/spring/spring.jpg);
+    background-image: url(http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/spring/beihai.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
