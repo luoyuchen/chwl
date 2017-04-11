@@ -4,7 +4,7 @@
     "pages/strategy/strategy",
     "pages/more/more",
     "pages/logs/logs",
-    "pages/tool/tool",
+    "pages/helper/helper",
     "pages/season/spring/post",
     "pages/season/spring/post-detail/post-detail",
     "pages/season/summer/post",
@@ -13,7 +13,11 @@
     "pages/season/autumn/post-detail/post-detail",
     "pages/season/winter/post",
     "pages/season/winter/post-detail/post-detail",
-    "pages/hot/hot"
+    "pages/hot/hot",
+    "pages/tool/tool",
+    "pages/tool/date/date",
+    "pages/tool/weather/weather",
+    "pages/tool/weather/list/list"
    
     
   ],
@@ -29,10 +33,16 @@
       "selectedIconPath": "images/icon/travel.png"
     },
       {
-      "pagePath": "pages/tool/tool",
+      "pagePath": "pages/helper/helper",
       "text": "助手",
       "iconPath": "images/icon/helperd.png",
       "selectedIconPath": "images/icon/helper.png"
+    },
+    {
+      "pagePath":"pages/tool/tool",
+      "text":"工具",
+      "iconPath":"images/icon/mored.png",
+      "selectedIconPath":"images/icon/more.png"
     }
    
     ]
