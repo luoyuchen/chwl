@@ -1,4 +1,4 @@
-//morningf@foxmail.com
+
 
 var ccFile = require('../../../utils/calendar-converter.js')
 var calendarConverter = new ccFile.CalendarConverter();

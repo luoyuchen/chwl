@@ -69,9 +69,10 @@
 
     <!--***************** 其他  *******************-->
     <view class="other-container">
-      <!--风-->
+      <view class="other-wraper">
+        <!--风-->
       <view class="items wind-items">
-        <view class="pic"><image src="../../../images/fengli.png"></image></view>
+        <view class="pic"><image src="/images/fengli.png"></image></view>
         <!--风向-->
         <view class="wind-dir-container left">
           <view class="wind-dir items-title-sub">风向</view>
@@ -86,7 +87,7 @@
 
       <!--太阳-->
       <view class="items sun-items">
-        <view class="pic"><image src="../../../images/taiyang.png"></image></view>
+        <view class="pic"><image src="/images/taiyang.png"></image></view>
         <!--日出-->
         <view class="sun-up-container left">
           <view class="sun-up items-title-sub">日出</view>
@@ -98,10 +99,12 @@
           <view class="sun-down-text items-title-main">{{daily[0].astro.ss}}</view>
         </view><!--日落结束-->
       </view><!--太阳结束-->
-
-      <!--湿度-->
+      </view>
+      
+      <view class="other-wraper">
+           <!--湿度-->
       <view class="items hum-items">
-        <view class="pic"><image src="../../../images/shidu.png"></image></view>
+        <view class="pic"><image src="/images/shidu.png"></image></view>
         <!--湿度文字-->
         <view class="hum-container middle">
           <view class="hum items-title-sub">湿度</view>
@@ -111,13 +114,15 @@
 
       <!--体感温度-->
       <view class="items tem-items">
-        <view class="pic"><image src="../../../images/tiganwendu.png"></image></view>
+        <view class="pic"><image src="/images/tiganwendu.png"></image></view>
         <!--体感温度文字-->
         <view class="tem-container middle">
           <view class="tem items-title-sub">体感温度</view>
           <view class="tem-text items-title-main">{{now.fl}}</view>
         </view><!--文字结束-->
       </view><!--体感温度结束-->
+      </view>
+     
     </view><!--其他结束-->
 
 
