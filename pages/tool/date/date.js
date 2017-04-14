@@ -185,5 +185,13 @@ Page({
         })
     },
 
+    onShareAppMessage: function() {
+    // 用户点击右上角分享
+    return {
+      title: '【日历查询】', // 分享标题
+      desc: '', // 分享描述
+      path: '/pages/tool/date/date' // 分享路径
+    }
+  }
 
 });

@@ -16,7 +16,7 @@ view{
 .container{
   height:100%;
   padding:0;
-  background:url(http://api.h6vr.com/cdn.h6vr.com/chwl/images/season/summer/summer.jpg) no-repeat center center/cover;
+  background:url(http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/bg.jpg) no-repeat center center/cover;
 }
 .scroll{
   height:100%;

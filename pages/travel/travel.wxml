@@ -9,36 +9,55 @@
           </block>
         </swiper>
     </view>
+    <!--导航图标-->
+    <view class="navList">
+        <navigator wx:for="{{navList}}" wx:key="" open-type="{{openType}}"  url="{{item.page}}" class="navitem">
+            <image src="{{item.icon}}"></image>
+            <text>{{item.name}}</text>
+        </navigator>
+    </view>
     <!--热门预留-->
-    <view class="hot">
-        <view class="hoticon">
+    <view class="hotWraper">
+        <view class="listtext hottext">
+            <text>◇ 热门推荐 ◇</text>
+        </view>
+        <view class="hot">
+        <!--<view class="hoticon">
             <image src="{{hoticon}}" style="width:100%;height:100%"></image>
+        </view>-->
+                
+                <swiper class="headLineSwiper" vertical="{{vertical}}" indicator-dots="{{indicatorDots}}" autoplay="{{hotautoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+            <swiper-item wx:for="{{headLineList}}" wx:for-item="hot" class="hotimg" bindtap="jumpHeadLineList">
+                
+                <image src="{{hot}}" style=""></image>
+                
+                
+            </swiper-item>
+            </swiper>
         </view>
-        
-        <swiper class="headLineSwiper" vertical="{{vertical}}" indicator-dots="{{indicatorDots}}" autoplay="{{hotautoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
-      <swiper-item wx:for="{{headLineList}}" wx:for-item="hot" class="hotimg" bindtap="jumpHeadLineList">
-        
-        <image src="{{hot}}" style=""></image>
-          
-        
-      </swiper-item>
-    </swiper>
     </view>
+    
     <!--四季-->
-    <view class="season">
-        <view class="inner spring hover" bindtap="openSpring">
-            <text class="text">春</text>
+    <view class="seasonWraper">
+        
+        <view class="listtext hottext">
+            <text>◇ 四季攻略 ◇</text>
         </view>
-        <view class="inner summer hover" bindtap="openSummer">
-            <text class="text">夏</text>
+        <view class="season">
+            <view class="inner spring hover" bindtap="openSpring">
+                <text class="text">春</text>
+            </view>
+            <view class="inner summer hover" bindtap="openSummer">
+                <text class="text">夏</text>
+            </view>
         </view>
-    </view>
-    <view class="season">
-        <view class="inner autumn" bindtap="openAutumn">
-            <text class="text">秋</text>
-        </view>
-        <view class="inner winner" bindtap="openWinter">
-            <text class="text">冬</text>
+        <view class="season">
+            <view class="inner autumn" bindtap="openAutumn">
+                <text class="text">秋</text>
+            </view>
+            <view class="inner winner" bindtap="openWinter">
+                <text class="text">冬</text>
+            </view>
         </view>
     </view>
 </view>

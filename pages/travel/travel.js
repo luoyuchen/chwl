@@ -10,7 +10,31 @@ Page({
     circular: true,
     headLineList:['http://api.h6vr.com/cdn.h6vr.com/chwl/images/hot/taohuajie.jpg','http://api.h6vr.com/cdn.h6vr.com/chwl/images/hot/taohuajie.jpg','http://api.h6vr.com/cdn.h6vr.com/chwl/images/hot/taohuajie.jpg'],
     hoticon:['http://api.h6vr.com/cdn.h6vr.com/chwl/images/hot/hot.png'],
-    hotautoplay:false
+    hotautoplay:false,
+    navList:[
+        {
+            name:"赏花",
+            icon:"/images/icon/flower.png",
+            page:"/pages/season/spring/post"
+        },
+        {
+            name:"天气",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/weather.png",
+            page:"/pages/tool/weather/weather"
+        },
+        {
+            name:"日历",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/date.png",
+            page:"/pages/tool/date/date"
+        },
+        {
+            name:"助手",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/helper.png",
+            page:"/pages/helper/helper/helper",
+
+        }
+    ],
+    openType:"navigate"
   },
   onLoad:function(options){
     // 生命周期函数--监听页面加载

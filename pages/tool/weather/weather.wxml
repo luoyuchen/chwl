@@ -4,7 +4,7 @@
   <scroll-view scroll-y="true" class="scroll">
       <!--******************  主体部分  ********************-->
     <view class="main-container">
-      <swiper indicator-dots="true" duration="{{duration}}">
+      <swiper indicator-dots="{{indicatordots}}" duration="{{duration}}">
         <block wx:for="{{imgUrls}}" wx:key="{{index}}">
           <swiper-item class="main">
             <navigator class="change" url="list/list">切换</navigator>
@@ -30,7 +30,7 @@
               <!--每一天-->
               <view class="day" wx:for="{{daily}}" wx:key="{{index}}">
                 <view class="date">{{day[index]}}</view>
-                <view class="icon"><image src="../../../images/icon/{{item.cond.code_d}}.png"></image></view>
+                <view class="icon"><image src="http://api.h6vr.com/cdn.h6vr.com/chwl/images/weather/{{item.cond.code_d}}.png"></image></view>
                 <view class="degree">{{item.tmp.max}}℃/{{item.tmp.min}}℃</view>
               </view>
             </view>
@@ -72,7 +72,7 @@
       <view class="other-wraper">
         <!--风-->
       <view class="items wind-items">
-        <view class="pic"><image src="/images/fengli.png"></image></view>
+        <view class="pic"><image src="http://api.h6vr.com/cdn.h6vr.com/chwl/images/weather/fengli.png"></image></view>
         <!--风向-->
         <view class="wind-dir-container left">
           <view class="wind-dir items-title-sub">风向</view>
@@ -87,7 +87,7 @@
 
       <!--太阳-->
       <view class="items sun-items">
-        <view class="pic"><image src="/images/taiyang.png"></image></view>
+        <view class="pic"><image src="http://api.h6vr.com/cdn.h6vr.com/chwl/images/weather/taiyang.png"></image></view>
         <!--日出-->
         <view class="sun-up-container left">
           <view class="sun-up items-title-sub">日出</view>
@@ -104,7 +104,7 @@
       <view class="other-wraper">
            <!--湿度-->
       <view class="items hum-items">
-        <view class="pic"><image src="/images/shidu.png"></image></view>
+        <view class="pic"><image src="http://api.h6vr.com/cdn.h6vr.com/chwl/images/weather/shidu.png"></image></view>
         <!--湿度文字-->
         <view class="hum-container middle">
           <view class="hum items-title-sub">湿度</view>
@@ -114,7 +114,7 @@
 
       <!--体感温度-->
       <view class="items tem-items">
-        <view class="pic"><image src="/images/tiganwendu.png"></image></view>
+        <view class="pic"><image src="http://api.h6vr.com/cdn.h6vr.com/chwl/images/weather/tiganwendu.png"></image></view>
         <!--体感温度文字-->
         <view class="tem-container middle">
           <view class="tem items-title-sub">体感温度</view>
@@ -132,7 +132,7 @@
       <view class="items">
         <view class="left">
           <view class="pic">
-            <image src="../../../images/cy.png"></image>
+            <image src="http://api.h6vr.com/cdn.h6vr.com/chwl/images/weather/cy.png"></image>
           </view>
           <text class="sub">穿衣指数</text>
           <text class="eval">{{suggestion.drsg.brf}}</text>
@@ -143,7 +143,7 @@
       <view class="items">
         <view class="left">
           <view class="pic">
-            <image src="../../../images/zwx.png"></image>
+            <image src="http://api.h6vr.com/cdn.h6vr.com/chwl/images/weather/zwx.png"></image>
           </view>
           <text class="sub">紫外线指数</text>
           <text class="eval">{{suggestion.uv.brf}}</text>
@@ -154,7 +154,7 @@
       <view class="items">
         <view class="left">
           <view class="pic">
-            <image src="../../../images/ly.png"></image>
+            <image src="http://api.h6vr.com/cdn.h6vr.com/chwl/images/weather/ly.png"></image>
           </view>
           <text class="sub">旅游指数</text>
           <text class="eval">{{suggestion.trav.brf}}</text>
@@ -165,7 +165,7 @@
       <view class="items">
         <view class="left">
           <view class="pic">
-            <image src="../../../images/yd.png"></image>
+            <image src="http://api.h6vr.com/cdn.h6vr.com/chwl/images/weather/yd.png"></image>
           </view>
           <text class="sub">运动指数</text>
           <text class="eval">{{suggestion.sport.brf}}</text>
@@ -176,7 +176,7 @@
       <view class="items">
         <view class="left">
           <view class="pic">
-            <image src="../../../images/ss.png"></image>
+            <image src="http://api.h6vr.com/cdn.h6vr.com/chwl/images/weather/ss.png"></image>
           </view>
           <text class="sub">舒适指数</text>
           <text class="eval">{{suggestion.comf.brf}}</text>
@@ -187,7 +187,7 @@
       <view class="items">
         <view class="left">
           <view class="pic">
-          <image src="../../../images/xc.png"></image>
+          <image src="http://api.h6vr.com/cdn.h6vr.com/chwl/images/weather/xc.png"></image>
           </view>
           <text class="sub">洗车指数</text>
           <text class="eval">{{suggestion.cw.brf}}</text>

@@ -1,5 +1,5 @@
 .toolBody{
-    background: url("/images/bg.jpg");
+    background: url("http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/bg.jpg");
     height: 100%;
     padding-top: 2%
 }

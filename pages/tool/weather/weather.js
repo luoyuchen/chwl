@@ -4,7 +4,7 @@ var app = getApp();
 Page({
   data: {
     imgUrls: [
-      '../../../../images/bg11.jpg'
+      'http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/bg.jpg'
     ],
     duration: 1000,
     basic:{},
@@ -16,6 +16,7 @@ Page({
     city:"",
     day:["今天","明天","后天"],
     suggestion:{},
+    indicatordots:false
 
     },
 
@@ -81,7 +82,16 @@ Page({
           }
         );
       }//else结束
-    }//页面加载结束
+    },//页面加载结束
+    onShareAppMessage: function() {
+    // 用户点击右上角分享
+    return {
+      title: '【天气状况 随时掌握】', // 分享标题
+      desc: '', // 分享描述
+      path: '/pages/tool/weather/weather' // 分享路径
+    }
+  }
+
 });
 
 
