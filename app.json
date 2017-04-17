@@ -18,7 +18,9 @@
     "pages/tool/tool",
     "pages/tool/date/date",
     "pages/tool/weather/weather",
-    "pages/tool/weather/list/list"
+    "pages/tool/weather/list/list",
+    "pages/tool/constellation/constellation",
+    "pages/tool/constellation/constellation-detail/index"
    
     
   ],

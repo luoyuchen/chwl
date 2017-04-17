@@ -14,7 +14,7 @@ Page({
     navList:[
         {
             name:"赏花",
-            icon:"/images/icon/flower.png",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/flower.png",
             page:"/pages/season/spring/post"
         },
         {
@@ -28,9 +28,9 @@ Page({
             page:"/pages/tool/date/date"
         },
         {
-            name:"助手",
-            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/helper.png",
-            page:"/pages/helper/helper/helper",
+            name:"星座",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/xingzuo/xingzuo.png",
+            page:"/pages/tool/constellation/constellation",
 
         }
     ],
