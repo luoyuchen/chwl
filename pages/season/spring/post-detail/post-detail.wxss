@@ -97,6 +97,7 @@ page{
 }
 .detail{
     color: #666;
+    font-size: 30rpx;
     margin-left: 30rpx;
     margin-top: 20rpx;
     margin-right: 30rpx;

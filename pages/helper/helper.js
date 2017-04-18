@@ -149,7 +149,7 @@ Page({
         return {
             title: '【不懂？就问智能助手吧】',
             desc: '',
-            path: 'pages/tool/tool'
+            path: 'pages/helper/helper'
         }
     }
 })

@@ -89,6 +89,7 @@
   z-index: -99;
 }
 .detail{
+    font-size: 30rpx;
     color: #666;
     margin-left: 30rpx;
     margin-top: 20rpx;
