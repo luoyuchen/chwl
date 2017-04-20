@@ -20,7 +20,9 @@
     "pages/tool/weather/weather",
     "pages/tool/weather/list/list",
     "pages/tool/constellation/constellation",
-    "pages/tool/constellation/constellation-detail/index"
+    "pages/tool/constellation/constellation-detail/index",
+    "pages/tool/joke/index/index",
+    "pages/tool/joke/pictures/main"
    
     
   ],

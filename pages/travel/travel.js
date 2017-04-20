@@ -14,23 +14,37 @@ Page({
     navList:[
         {
             name:"赏花",
-            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/flower.png",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/flower2.png",
             page:"/pages/season/spring/post"
         },
         {
             name:"天气",
-            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/weather.png",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/weather2.png",
             page:"/pages/tool/weather/weather"
         },
         {
             name:"日历",
-            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/date.png",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/date2.png",
             page:"/pages/tool/date/date"
         },
         {
             name:"星座",
-            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/xingzuo/xingzuo.png",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/xingzuo.png",
             page:"/pages/tool/constellation/constellation",
+
+        },
+        
+        {
+            name:"笑话",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/xiaohua.png",
+            page:"/pages/tool/joke/index/index",
+
+        },
+        
+        {
+            name:"动图",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/gif.png",
+            page:"/pages/tool/joke/pictures/main",
 
         }
     ],

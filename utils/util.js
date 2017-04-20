@@ -17,5 +17,13 @@ function formatNumber(n) {
 }
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  replaceAll: replaceAll
+}
+
+function replaceAll(source, oldStr, newStr) {
+    while (source.indexOf(oldStr) >= 0){
+      source = source.replace(oldStr, newStr);
+    }
+    return source;
 }

@@ -29,6 +29,8 @@ App({
     }
   },
   globalData:{
+   /*appkey:'53efd70e85818958f140184c22b25eb4'*/
+   appkey:'309acb9349e07cd1f67b241a9c257094',
     userInfo:null
   }
 })
