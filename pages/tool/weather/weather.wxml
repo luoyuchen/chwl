@@ -7,6 +7,7 @@
       <swiper indicator-dots="{{indicatordots}}" duration="{{duration}}">
         <block wx:for="{{imgUrls}}" wx:key="{{index}}">
           <swiper-item class="main">
+            <button size="mini" bindtap="goTo" class="goBack">返回首页</button>
             <navigator class="change" url="list/list">切换</navigator>
             <!--文字部分-->
             <view class="main-section">

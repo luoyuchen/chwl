@@ -22,7 +22,8 @@
     "pages/tool/constellation/constellation",
     "pages/tool/constellation/constellation-detail/index",
     "pages/tool/joke/index/index",
-    "pages/tool/joke/pictures/main"
+    "pages/tool/joke/pictures/main",
+    "pages/tool/history/index"
    
     
   ],

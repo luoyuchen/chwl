@@ -46,6 +46,18 @@ Page({
             icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/gif.png",
             page:"/pages/tool/joke/pictures/main",
 
+        },
+        {
+            name:"史今",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/history.png",
+            page:"/pages/tool/history/index",
+
+        },
+        {
+            name:"助手",
+            icon:"http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/kefu.jpg",
+            page:"/pages/helper/helper/helper",
+
         }
     ],
     openType:"navigate"

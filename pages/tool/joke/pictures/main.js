@@ -63,5 +63,11 @@ Page({
           that.setData({pics: that.data.pics.concat(res.data.result.data)});
         }
       })
+  },
+
+  goTo:function(){
+    wx.reLaunch({
+      url: '/pages/travel/travel'
+    })
   }
 })

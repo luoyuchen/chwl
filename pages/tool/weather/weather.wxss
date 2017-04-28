@@ -42,6 +42,12 @@ view{
   color:#fff;
 
 }
+/**返回按钮**/
+.goBack{
+  margin:22px 0 0 12px;
+  color: #fff;
+  background: rgba(255,255, 255, .1)
+}
 .main-section{
   width:500rpx;
   height:400rpx;

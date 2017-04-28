@@ -2,7 +2,7 @@ page {
     height:100%;
 }
 .detail-container {
-    height:100%; background: url("http://api.h6vr.com/cdn.h6vr.com/chwl/images/xingzuo/xzbg.jpg"); background-size: cover; color:#FFF; padding: 8px;
+    height:100%; background: url("http://api.h6vr.com/cdn.h6vr.com/chwl/images/icon/bg6.jpg"); background-size: cover; color:#FFF; padding: 8px;
 }
 .detail-container .title {
     width:100%; text-align: center; padding-bottom:15px;
@@ -41,4 +41,7 @@ page {
 }
 .year .con text {
     font-weight:bold;
+}
+.footer-part{
+    padding-bottom:30px;
 }

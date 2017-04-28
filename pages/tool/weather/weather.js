@@ -90,6 +90,11 @@ Page({
       desc: '', // 分享描述
       path: '/pages/tool/weather/weather' // 分享路径
     }
+  },
+  goTo:function(){
+    wx.reLaunch({
+      url: '/pages/travel/travel'
+    })
   }
 
 });

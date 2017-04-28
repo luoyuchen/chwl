@@ -77,5 +77,10 @@ Page({
     //tmp_data = tmp_data.push(this.data.jokes);
     this.setData({jokes: this.data.jokes.concat(tmp_data)});
     /*this.data.jokes.concat(tmp_data)将原始数据与最新数据组合在一起，实现无刷新显示 */
+  },
+  goTo:function(){
+    wx.reLaunch({
+      url: '/pages/travel/travel'
+    })
   }
 })
