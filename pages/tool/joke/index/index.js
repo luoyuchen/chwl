@@ -47,14 +47,12 @@ Page({
   loadJokes: function() {
     var that = this;
     var key = app.globalData.appkey;
-    var url = "https://japi.juhe.cn/joke/content/text.from";
+    var urls = "https://v.juhe.cn/joke/randJoke.php";
 
     wx.request({
-      url: url,
+      url: urls,
       data: {
-        key: key,
-        page: that.data.page,
-        pagesize: that.data.pagesize
+        key: key
       },
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header
@@ -62,7 +60,7 @@ Page({
         // success
         console.log(res);
         
-        that.rebuildData(res.data.result.data);
+        that.rebuildData(res.data.result);
       }
     })
   },

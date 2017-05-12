@@ -3,7 +3,8 @@ Page({
   data:{
     pics:[],
     page:1,
-    pagesize:15
+    pagesize:15,
+    type:'pic'
   },
   onLoad:function(options){
     // 生命周期函数--监听页面加载
@@ -47,20 +48,21 @@ Page({
   loadPics: function() {
       var that = this;
       var key = app.globalData.appkey;
-      var url = "https://japi.juhe.cn/joke/img/text.from";
+      var url = "https://v.juhe.cn/joke/randJoke.php";
       wx.request({
         url: url,
         data: {
             key: key,
             page: that.data.page,
-            pagesize: that.data.pagesize
+            pagesize: that.data.pagesize,
+            type:that.data.types
         },
         method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
         // header: {}, // 设置请求的 header
         success: function(res){
           // success
           console.log(res);
-          that.setData({pics: that.data.pics.concat(res.data.result.data)});
+          that.setData({pics: that.data.pics.concat(res.data.result)});
         }
       })
   },
