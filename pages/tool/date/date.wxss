@@ -115,3 +115,6 @@
 .view-hover{
     background:#eee;
 }
+.jinji{
+  padding: 2% 5%;
+}

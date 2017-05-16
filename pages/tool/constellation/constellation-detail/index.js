@@ -59,5 +59,14 @@ Page({
     wx.reLaunch({
       url: '/pages/travel/travel'
     })
+  },
+  onShareAppMessage:function(){
+    var that=this
+    var name=that.data.name
+    console.log(name);
+    return{
+      title:'【快来查查你的星座运势】',
+      path: '/pages/tool/constellation/constellation-detail/index?name='+name
+    }
   }
 })

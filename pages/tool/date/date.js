@@ -43,6 +43,7 @@ var pageData = {
         arrDays: [],             //关于几号的信息
         arrInfoEx: [],           //农历节假日等扩展信息
         arrInfoExShow: [],       //处理后用于显示的扩展信息
+        resultdata: {},
     },
 
     //选择一天时显示的信息
@@ -109,7 +110,6 @@ var refreshPageData = function(year, month, day){
 };
 
 
-
 var curDate = new Date();
 var curMonth = curDate.getMonth();
 var curYear = curDate.getFullYear();
@@ -118,8 +118,49 @@ refreshPageData(curYear, curMonth, curDay);
 
 Page({
     data: pageData,
-    onLoad: function() {
-    },
+    onLoad: function(day,mon,year) {
+      //黄历随机数------------------------------------------------------------
+      // 生命周期函数--监听页面加载
+      /*wx.showLoading({
+        title: '获取数据中',
+      })*/
+      var self = this
+      year= 2017
+      day = parseInt(Math.random() * 28)
+      mon = parseInt(Math.random() * 12 ) //表示 取11以内的随机数 包含小数
+      console.log(day)
+      wx.request({
+        url: 'https://v.juhe.cn/calendar/day?date=' +year+"-" +mon+"-"+day + '&key=f13db608eb0caa288dc19eeb2d836e48',
+        data: {},
+        method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+        // header: {}, // 设置请求的 header
+        success: function (res) {
+          //wx.hideLoading()
+          /*wx.showToast({
+            title: '获取数据成功',
+            icon: 'success',
+            duration: 2000
+          })*/
+          // success
+          self.setData({
+            resultdata: res.data
+          })
+        },
+        fail: function (res) {
+          // fail
+          /*wx.showToast({
+            title: '获取失败',
+            icon: 'fail',
+            duration: 2000
+          })*/
+        },
+        complete: function (res) {
+          // complete
+        }
+      })
+      //-----------------------------------------------------------------------
+    }
+    ,
     onShow: function() {
     },
 
@@ -170,10 +211,51 @@ Page({
     },
     //选中
     selectDay: function(e){
+      console.log()
         refreshDetailData(e.currentTarget.dataset.dayIndex);
+
+        //刷新黄历随机数---------------------------------------
+        var self = this
+        var year = 2017
+        var day = parseInt(Math.random() * 27)
+        var mon = parseInt(Math.random() * 12) //表示 取11以内的随机数 包含小数 (parseInt取整)
+        console.log(day)
+        console.log()
+        wx.request({
+          url: 'https://v.juhe.cn/calendar/day?date=' + year + "-" + mon + "-" + day + '&key=f13db608eb0caa288dc19eeb2d836e48',
+          data: {},
+          method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+          // header: {}, // 设置请求的 header
+          success: function (res) {
+            //wx.hideLoading()
+            /*wx.showToast({
+              title: '获取数据成功',
+              icon: 'success',
+              duration: 2000
+            })*/
+            // success
+            self.setData({
+              resultdata: res.data
+            })
+          },
+          fail: function (res) {
+            // fail
+            /*wx.showToast({
+              title: '获取失败',
+              icon: 'fail',
+              duration: 2000
+            })*/
+          },
+          complete: function (res) {
+            // complete
+          }
+        })
+        //---------------------------------------------------
         this.setData({
             detailData: pageData.detailData,
+            pageData:pageData.dateData.resultdata
         })
+        
     },
     // 跳转日历
     bindDateChange: function(e){

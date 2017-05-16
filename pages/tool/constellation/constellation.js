@@ -18,7 +18,7 @@ Page({
   },
   showDetail: function(e) {
     var name = e.currentTarget.dataset.name
-    console.log(name);
+    //console.log(e);
     wx.navigateTo({
       url: '/pages/tool/constellation/constellation-detail/index?name='+name
     })
